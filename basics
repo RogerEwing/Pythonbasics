@@ -5,3 +5,23 @@ Everywhere that Mary went The lamb was sure to go"
 g.find("snow")
 
 95
+
+
+A = [1, 'a']
+B = [2, 1, 'd']
+A + B
+
+[1, 'a', 2, 1, 'd']
+
+a_list = [1, "hello", [1,2,3], True ]
+a_list
+
+[1, 'hello', [1, 2, 3], True]
+
+a_list[1]
+
+'hello'
+
+a_list[1:4]
+
+['hello', [1, 2, 3], True]
