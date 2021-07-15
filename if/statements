@@ -57,3 +57,95 @@ if(Album_year < 1980 or Album_year == 1991 or Album_year == 1993):
         print("This album came out in year", Album_year) 
  
 This album came out in year 1991 
+
+
+Newsquares is of indeterminate size 
+Will add to Newsquares as long as the value of Squares is Orange.  
+ 
+ 
+What is for loop? 
+The for loop enables you to execute a code block multiple times. For example, you would use this if you would like to print out every element in a list. 
+Let's try to use a for loop to print all the years presented in the list dates: 
+ 
+So there are set limits the number of times a for loop will iterate 
+ 
+for i in range(0, 8): 
+    print(i) 
+ 
+squares = ['red', 'yellow', 'green', 'purple', 'blue'] 
+  
+for i in range(0, 5): 
+    print("Before square ", i, 'is',  squares[i]) first statement 
+    squares[i] = 'white'      -- new statement 
+    print("After square ", i, 'is',  squares[i])  2nd Statement 
+ 
+Before square 0 is red  
+After square 0 is white  
+Before square 1 is yellow  
+After square 1 is white  
+Before square 2 is green  
+After square 2 is white  
+Before square 3 is purple  
+After square 3 is white  
+Before square 4 is blue  
+After square 4 is white 
+ 
+squares=['red', 'yellow', 'green', 'purple', 'blue'] 
+  
+for i, square in enumerate(squares): 
+    print(i, square) 
+ 
+0 red  
+1 yellow  
+2 green  
+3 purple  
+4 blue 
+ 
+dates = [1982, 1980, 1973, 2000] 
+  
+i = 0 
+year = dates[0] 
+  
+while(year != 1973):     
+    print(year) 
+    i = i + 1 
+    year = dates[i] 
+print("It took ", i ,"repetitions to get out of loop.") 
+ 
+1982  
+1980  
+It took 2 repetitions to get out of loop. 
+ 
+To print out all the numbers in a range using a for loop 
+for i in range(-5, 6): 
+    print(i) 
+-5 -4 -3 -2 -1 0 1 2 3 4 5 
+ 
+Print the elements of the following list: Genres=[ 'rock', 'R&B', 'Soundtrack', 'R&B', 'soul', 'pop'] Make sure you follow Python conventions. 
+ 
+Genres=[ 'rock', 'R&B', 'Soundtrack', 'R&B', 'soul', 'pop'] 
+  
+N = len(Genres) 
+  
+for i in range(N): 
+    print(Genres[i]) 
+ 
+rock R&B Soundtrack R&B soul pop 
+ 
+PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10] 
+  
+for PlayListRating in PlayListRatings: 
+    print(PlayListRating) 
+10 9.5 10 8 7.5 5 10 10  
+ 
+squares = ['orange', 'orange', 'purple', 'blue ', 'orange'] 
+new_squares = [] 
+  
+i = 0 
+  
+while(i < len(squares) and squares[i] == 'orange'): 
+    new_squares.append(squares[i]) 
+    i = i + 1 
+print(new_squares) 
+ 
+['orange', 'orange'
