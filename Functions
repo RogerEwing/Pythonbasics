@@ -1,0 +1,36 @@
+def mult(a, b):
+    c = a / b
+    return(c)
+
+mult(6, 2)
+
+3.0
+
+def con(a, b):
+    return(a + b)
+
+#con(1, 2)
+con("The house", " The mouse")
+
+def con(a, b):
+    return(a + b)
+
+#con(1, 2)
+con("The house", " The mouse")
+
+myFavouriteBand = "AC/DC"
+
+def getBandRating(bandname):
+    myFavouriteBand = "Deep Purple"
+    if bandname == myFavouriteBand:
+        return 10.0
+    else:
+        return 0.0
+
+print("AC/DC's rating is:",getBandRating("AC/DC"))
+print("Deep Purple's rating is: ",getBandRating("Deep Purple"))
+print("My favourite band is:",myFavouriteBand)
+
+AC/DC's rating is: 0.0
+Deep Purple's rating is:  10.0
+My favourite band is: AC/DC
